@@ -1,5 +1,8 @@
 This folder serves provides a scaffold for creating new VS Code workspaces. The goal is to provide consistency across different projects. It should remain language agnostic.
 
+## Workspace actions
+- [Launch New Project task](command:workbench.action.tasks.runTask?%22New%20Project%22)
+
 ## Current Setup
 At the moment, the folder contains only the workspace file. The folder itself is configured as an Obsidian vault.
 

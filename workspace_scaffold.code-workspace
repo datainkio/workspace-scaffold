@@ -3,6 +3,10 @@
     { "path": "." },
   ],
 
+  "settings": {
+    "workbench.startupEditor": "welcomePage"
+  },
+
   "extensions": {
     "recommendations": [
       // Core

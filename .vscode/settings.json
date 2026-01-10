@@ -24,5 +24,6 @@
 		"**/cache/**": true,
 		"**/models/**": true,
 		"**/output/**": true
-	}
+	},
+	"workbench.startupEditor": "readme"
 }

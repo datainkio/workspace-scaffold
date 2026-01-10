@@ -1,0 +1,38 @@
+{
+	// POC task that collects a new workspace name and type. The command is a no-op for now.
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "New Project",
+			"type": "shell",
+			"command": "true",
+			"presentation": {
+				"reveal": "never",
+				"panel": "dedicated",
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"problemMatcher": [],
+			"inputs": [
+				{
+					"id": "newProjectName",
+					"type": "promptString",
+					"description": "Enter a workspace name"
+				},
+				{
+					"id": "newProjectType",
+					"type": "pickString",
+					"description": "Select a workspace type",
+					"options": ["front", "back", "ai", "empty"],
+					"default": "front"
+				}
+			],
+			"options": {
+				"env": {
+					"NEW_PROJECT_NAME": "${input:newProjectName}",
+					"NEW_PROJECT_TYPE": "${input:newProjectType}"
+				}
+			}
+		}
+	]
+}
