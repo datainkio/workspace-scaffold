@@ -27,3 +27,17 @@ TODO: Designer-Focused Integrations: Strengthen Obsidian with designer plugins (
 TODO: Boundary Documentation: Add a section in README.md stating: "Agents here maintain hygiene and AIX perf only—defer coding to project-specific agents." This reinforces the use case and prevents scope creep.
 TODO: Monitoring and Feedback Loops: Introduce a simple .agent/hygiene-log.md template for agents to record maintenance actions. Suggest periodic AIX benchmarks (e.g., manual timing of AI queries) to ensure ongoing performance.
 TODO: Monitoring and Feedback Loops: Introduce a simple .agent/hygiene-log.md template for agents to record maintenance actions. Suggest periodic AIX benchmarks (e.g., manual timing of AI queries) to ensure ongoing performance.
+
+
+TODO: Add regular “context drift” checks: verify curated context files (.copilot/context, /context) align with reality; flag stale links or missing excludes.
+TODO: Automate lightweight scans: broken links in docs, orphaned files, lints/format for config and docs (respect ignores), README/decision-log freshness checks.
+TODO: Dependency hygiene: surface outdated tooling/config pins (formatter, linter, build tools) with safe bump suggestions.
+TODO: Workspace ergonomics: ensure recommended extensions/settings/tasks are current; prune noisy configs; verify test tasks/runbooks are runnable.
+TODO: Observability of AI performance: track FRA/CR/HF/TTUO snapshots and log hygiene reports regularly.
+
+
+Navigator (context guide): curates and serves the minimal relevant context for tasks, keeping agents aligned with ignores/excludes.
+Builder (implementation): handles code changes/features; consumes Navigator context; avoids hygiene tasks unless asked.
+Reviewer (quality gate): focused on PR-style review, test coverage, and safety checks.
+Librarian (docs/knowledge): maintains docs, decisions, runbooks; keeps links and indexes accurate.
+Analyst (metrics/telemetry): runs AIX performance tasks, aggregates hygiene/perf trends, suggests refreshes.

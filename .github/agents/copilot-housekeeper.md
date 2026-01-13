@@ -18,4 +18,8 @@ Follow the full Housekeeper specification located at:
 - Treat `.copilot/context` as curated agent context
 - Do not modify business logic unless required for hygiene
 
+### Workspace hygiene & safety
+
+Respect repository ignores/excludes for scans; **always exclude `.obsidian/` from analysis and summaries**, but **do not delete, move, or edit `.obsidian/` content** since it must remain in the repo.
+
 Begin by performing a **Quick Hygiene Scan**.
