@@ -5,7 +5,10 @@ This folder serves provides a scaffold for creating new VS Code workspaces. The 
 * meaningful documentation
 
 ## Implementation
-My preference is use this as the foundation for a multi-root workspace. Folders like /frontend and /backend *can* be included, but good repo hygiene calls for maintaining them separately and just referencing them in the workspace via *add folder*.
+My preference is use this as the foundation for a single-root workspace. Folders like /frontend and /backend *can* be included, but good repo hygiene calls for maintaining them separately and just referencing them in the workspace via *add folder*.
+
+## Boundaries
+Agents here maintain hygiene and AIX perf only—defer coding to project-specific agents.
 
 ## Workspace actions
 - [New Project](command:workbench.action.tasks.runTask?%22New%20Project%22)

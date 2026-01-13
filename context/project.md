@@ -23,6 +23,7 @@ Those belong elsewhere.
 ---
 
 ## Project Summary
+This project positions agents primarily as maintainers of workspace hygiene (e.g., organization, cleanliness, documentation consistency) and AIX performance (e.g., optimizing for AI usability, context relevance, and efficiency).
 
 **Project Type:**
 Digital experience / web project (UX + frontend + optional backend)
