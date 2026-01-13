@@ -4,7 +4,7 @@
   ],
 
   "settings": {
-    "workbench.startupEditor": "welcomePage"
+    "workbench.startupEditor": "readme"
   },
 
   "extensions": {
