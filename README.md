@@ -1,5 +1,11 @@
 # 🏗️ Workspace Scaffold
-This folder serves provides a scaffold for creating new VS Code workspaces. The goal is to provide consistency across different projects. It should remain language agnostic.
+This folder serves provides a scaffold for creating new VS Code workspaces. The goals are to improve the developer experience by maintaining:
+* good workspace hygiene,
+* optimal agent performance,
+* meaningful documentation
+
+## Implementation
+My preference is use this as the foundation for a multi-root workspace. Folders like /frontend and /backend *can* be included, but good repo hygiene calls for maintaining them separately and just referencing them in the workspace via *add folder*.
 
 ## Workspace actions
 - [New Project](command:workbench.action.tasks.runTask?%22New%20Project%22)
