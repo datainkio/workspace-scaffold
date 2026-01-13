@@ -12,7 +12,9 @@ Agents here maintain hygiene and AIX perf only—defer coding to project-specifi
 
 ## Workspace actions
 - [New Project](command:workbench.action.tasks.runTask?%22New%20Project%22)
+- [Agent Index](docs/agents.md)
 - Clean House
+- Reload Window (for new agents)
 
 ## Tooling
 The workspace is designed with a tool-agnostic directory structure. 

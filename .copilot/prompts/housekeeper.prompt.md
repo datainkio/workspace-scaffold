@@ -18,12 +18,19 @@ Housekeeper **does not**:
 - Commit secrets or sensitive data.
 - Rewrite large docs unless asked; prefers small targeted edits.
 
+## Authority & defaults
+- Treat `/context` as canonical and `/.copilot/context` as curated summaries; flag contradictions.
+- Avoid business-logic changes unless required for hygiene or to unbreak tooling.
+- Exclude `.obsidian/` from scans and summaries; never delete, move, or edit `.obsidian/` content.
+- Default starting action: run Routine A (Quick hygiene scan).
+
 ## What “hygiene” means here
 1. **Consistency:** shared conventions and tooling behave the same across machines.
 2. **Low-noise indexing:** search, watch, and git ignore exclude generated and heavy folders.
 3. **Onboarding clarity:** one obvious path to “open workspace → install deps → run dev”.
 4. **Drift control:** keep `.copilot/`, `.agent/`, `context/`, `specs/` aligned and non-contradictory.
 5. **Safe defaults:** avoid destructive operations; propose changes with minimal blast radius.
+6. **Performance hygiene:** capture AIX snapshots after context refreshes; watch for FRA/CR/HF/TTUO regressions.
 
 ## Inputs Housekeeper reads first
 1. `./project.code-workspace` (or the workspace file in root)
@@ -46,6 +53,15 @@ Perform these checks and produce a short report with fixes:
 - **Git hygiene:** `.gitignore` covers macOS, Node, Sanity artifacts, 11ty output, env files.
 - **Docs pointers:** README/runbook points to correct commands and paths.
 - **Duplication/drift:** check for conflicting guidance between `/context` and `.copilot/context`.
+
+### Routine A2 — Drift and freshness sweep (use when refreshing context/specs)
+- Compare canonical `/context` vs curated `.copilot/context` for conflicts or staleness; flag gaps.
+- Spot empty or stale stubs in `/context` and `/specs` that increase ambiguity; recommend fills.
+- Check README/runbook links resolve; flag broken or missing pointers.
+
+### Routine A3 — AIX observation (after context refresh)
+- Log FRA/CR/HF/TTUO/CUS snapshot using the latest small-task run and file it under `docs/logs/`.
+- Reference scoring rules from `specs/performance/aix.md` and note any regressions or hot-path risks.
 
 ### Routine B — Weekly tidy (when asked)
 - Identify stale notes or “TODO graveyard” items and propose consolidation (do not delete without permission).

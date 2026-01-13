@@ -33,6 +33,18 @@
 					"NEW_PROJECT_TYPE": "${input:newProjectType}"
 				}
 			}
+		},
+		{
+			"label": "Open Agent Index",
+			"type": "shell",
+			"command": "code ${workspaceFolder}/docs/agents.md",
+			"presentation": {
+				"reveal": "never",
+				"panel": "dedicated",
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"problemMatcher": []
 		}
 	]
 }

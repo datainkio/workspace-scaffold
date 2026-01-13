@@ -1,6 +1,6 @@
 # Hygiene Reports
 
-Use this folder to store workspace hygiene reports produced by agents (housekeeper). Reports should be concise, link to files touched, and include evidence for AIX metrics.
+Use this folder to store workspace hygiene reports produced by agents (housekeeper/analyst). Reports should be concise, link to files touched, and include evidence for AIX metrics. Log an AIX snapshot here after each context refresh per `specs/performance/aix.md`.
 
 ## Naming
 - `YYYY-MM-DD-hygiene.md`

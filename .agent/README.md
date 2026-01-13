@@ -15,7 +15,7 @@ Use these playbooks; do not change product logic unless fixing hygiene drift.
 
 ### Quick Scan (on demand)
 1) Read `/context` and `/specs` for drift or TODOs; note gaps (empty constraints/decisions/design-philosophy).
-2) Validate required folders exist: `/context`, `/specs`, `/docs/decisions`, `/docs/runbooks`, `/docs/notes`.
+2) Validate required folders exist: `/context`, `/specs`, `/docs/decisions`, `/docs/runbooks`, `/docs/notes`, `/docs/logs`.
 3) Check excludes consistency (`.vscode/settings.json`, `.gitignore`) for `node_modules`, build outputs, caches, `.obsidian`.
 4) Record findings in a report (see Logging).
 
@@ -33,7 +33,7 @@ Use these playbooks; do not change product logic unless fixing hygiene drift.
 4) Log report with any blockers.
 
 ## Logging (required)
-- Write reports to `/docs/notes/hygiene/` named `YYYY-MM-DD-hygiene.md` using the skeleton in `/docs/notes/hygiene/README.md`.
+- Write reports to `/docs/logs/` named `YYYY-MM-DD-hygiene.md` using the skeleton in `/docs/logs/README.md`.
 - Include: Summary, Actions Taken, Findings, Recommendations, Metrics snapshot (FRA, CR, HF, CUS, TTUO where applicable).
 - Link every mentioned file or line; keep concise.
 

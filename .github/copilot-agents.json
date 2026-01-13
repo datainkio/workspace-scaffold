@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "agents": [
+    {
+      "name": "Housekeeper",
+      "promptPath": ".github/agents/housekeeper.md"
+    },
+    {
+      "name": "Navigator",
+      "promptPath": ".github/agents/navigator.md"
+    },
+    {
+      "name": "Librarian",
+      "promptPath": ".github/agents/librarian.md"
+    },
+    {
+      "name": "Analyst",
+      "promptPath": ".github/agents/analyst.md"
+    }
+  ]
+}
