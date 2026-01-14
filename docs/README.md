@@ -2,6 +2,12 @@
 
 This folder is the **human-facing docs hub** for the workspace.
 
+## Audience convention
+
+- `docs/` is written **for humans first** (onboarding, runbooks, navigation, and narrative documentation).
+- AI should benefit from it, but canonical truth lives elsewhere.
+- For source-of-truth constraints and durable contracts, prefer `context/` and `specs/`.
+
 ## Start here
 
 - New to the repo: `docs/onboarding/README.md`

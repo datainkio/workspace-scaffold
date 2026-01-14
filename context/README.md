@@ -1,5 +1,10 @@
 # Project Context (Canonical)
 
+## Audience convention
+
+- `context/` (this folder) and `specs/` are **canonical** and should be treated as source-of-truth by both humans and AI.
+- `docs/` is primarily a **human-facing hub** for onboarding, runbooks, and navigation.
+
 This folder contains the authoritative, tool-agnostic context for this project. It answers the following questions:
 * Why does this project exist?
 * What phase are we in?
