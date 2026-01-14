@@ -36,6 +36,13 @@ When applying module guidance:
 3) Assumptions
 4) Next actions
 
+## Primary Output (Type: Markdown)
+A single **Contract / Output Schema** response that follows the Concierge output schema:
+1) Classification
+2) Deliverable
+3) Assumptions
+4) Next actions
+
 ## Guardrails
 - Do not tell the user to switch agents.
 - Respect ignores: never recommend editing ignored paths.
