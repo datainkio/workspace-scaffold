@@ -1,34 +1,73 @@
 # Workspace Map
-This file describes where everything lives (frontend/backend/root) and what each folder contains. Focus: keep AI agents oriented and fast.
+This file describes where everything lives in this scaffold workspace and what each folder contains.
+Focus: keep AI agents oriented and fast.
+
+Note: This repo is a workspace scaffold (hygiene + docs + agent workflows). It does not include a concrete `/frontend` or `/backend` project by default.
 
 ## Canonical Context (source of truth)
-- [context/README.md](context/README.md) — canonical layer description. Expected but missing: `context/decisions.md`, `context/current-goals.md` (add soon so agents have goals/ADRs).
+- [context/README.md](../../context/README.md) — what “context” means and why it’s authoritative.
+- Key canonical files (all in [context/](../../context/)):
+	- [context/project.md](../../context/project.md) — project intent / north star
+	- [context/design-philosophy.md](../../context/design-philosophy.md) — guiding principles
+	- [context/constraints.md](../../context/constraints.md) — non-negotiables
+	- [context/decisions.md](../../context/decisions.md) — decisions / ADR-style notes
+	- [context/example-context.md](../../context/example-context.md) — example pattern
+- Expected soon (missing): `context/current-goals.md` (single page of “what matters right now”).
+
+## Curated Agent Context (orientation layer)
+- [.copilot/context/README.md](README.md) — what this curated layer is.
+- Curated files (keep short, point to canonical truth):
+	- [.copilot/context/workspace-map.md](workspace-map.md) — this map
+	- [.copilot/context/coding-standards.md](coding-standards.md) — stub (fill when a project is attached)
+	- [.copilot/context/stack-and-commands.md](stack-and-commands.md) — stub (fill when a project is attached)
 
 ## Specs (contracts)
-- [specs/README.md](specs/README.md) — folder purpose.
-- Empty spec stubs to populate: [specs/architecture.md](specs/architecture.md), [specs/components.md](specs/components.md), [specs/routes-and-content.md](specs/routes-and-content.md), [specs/cms-schema-contract.md](specs/cms-schema-contract.md), [specs/animation-system.md](specs/animation-system.md).
+- [specs/README.md](../../specs/README.md) — what “specs” are and how to use them.
+- Specs are organized by topic folders under [specs/](../../specs/):
+	- Architecture: [specs/architecture/](../../specs/architecture/)
+	- Components: [specs/components/](../../specs/components/)
+	- Routes/content: [specs/routes-content/](../../specs/routes-content/)
+	- CMS: [specs/cms/](../../specs/cms/)
+	- Data: [specs/data/](../../specs/data/)
+	- UX (has real docs): [specs/ux/](../../specs/ux/)
+	- Performance (AIX spec lives here): [specs/performance/aix.md](../../specs/performance/aix.md)
 
 ## Docs (narrative, non-canonical)
-- [docs/README.md](docs/README.md) — explains intent. Subfolders `docs/decisions/`, `docs/notes/`, `docs/runbooks/`, `docs/logs/` exist; add runbooks for repeatable tasks and keep logs for hygiene/AIX snapshots.
+- [docs/README.md](../../docs/README.md) — human-facing narrative notes (not authoritative by default).
+- Key doc entrypoints:
+	- Agent index: [docs/agents.md](../../docs/agents.md)
+	- Runbooks: [docs/runbooks/](../../docs/runbooks/)
+	- Logs (AIX/hygiene snapshots): [docs/logs/](../../docs/logs/)
+	- Decisions (narrative ADRs): [docs/decisions/](../../docs/decisions/)
 
 ## Scripts
-- [scripts/README.md](scripts/README.md) — guidance; no scripts yet.
+- [scripts/README.md](../../scripts/README.md) — scripting guidance (no scripts yet).
 
 ## Assets & Data
-- [assets/](assets/) and [data/](data/) exist; both empty. Add manifests when populated so agents can locate media/data fast.
+- [assets/](../../assets/) and [data/](../../data/) exist and are currently empty.
+- When you add files, include a small manifest (`README.md` or `manifest.json`) so agents can locate media/data fast.
+
+## Agent Workflows (roles/playbooks)
+- [.agent/README.md](../../.agent/README.md) — roles, workflows, and logging expectations.
+- Roles: [.agent/roles/](../../.agent/roles/)
+- Workflows/checklists: [.agent/workflows/](../../.agent/workflows/) and [.agent/checklists/](../../.agent/checklists/)
+
+## Copilot Agent Registration
+- [copilot-agents.json](../../copilot-agents.json) — which agent(s) Copilot Chat can see.
+- Entrypoints for registered agents live under [.github/agents/](../../.github/agents/).
 
 ## Workspace Config
-- [workspace_template.code-workspace](workspace_template.code-workspace) — VS Code workspace definition.
-- Root [README.md](README.md) — describes this as language-agnostic scaffold and Obsidian setup.
+- [workspace_scaffold.code-workspace](../../workspace_scaffold.code-workspace) — VS Code workspace definition.
+- VS Code settings/tasks live in [.vscode/](../../.vscode/) (includes the “New Project” task).
+- Root README: [README.md](../../README.md) — scaffold intent + quick actions.
+- Obsidian vault config: [.obsidian/](../../.obsidian/)
 
 ## Agent Roles
-- Housekeeper: hygiene, excludes, drift sweeps, AIX snapshot logging after context refreshes.
-- Navigator: context concierge; assembles minimal source bundle and flags drift.
-- Librarian: documentation steward; keeps runbooks/decisions/notes fresh and linked.
-- Analyst: AIX observer; runs probes and records FRA/CR/HF/TTUO/CUS into logs.
+- Concierge: router; registered in Copilot; emits handoff requests to specialists.
+- Specialists: Housekeeper (hygiene/excludes/AIX logging), Navigator (context packs), Librarian (docs), Analyst (AIX probes), Architect (structure/decisions), Mechanic (build/CI failures), Editor (narrative), Choreographer (animations/GSAP guidance).
 
 ## Agent Notes / Next AIX actions
-- Create `context/current-goals.md` and `context/decisions.md` to anchor priorities/ADRs.
-- Fill core specs starting with `specs/architecture.md` and `specs/components.md` to reduce ambiguity for generation.
+- Create `context/current-goals.md` to anchor priorities.
+- Fill spec templates starting with [specs/architecture/template.md](../../specs/architecture/template.md) and [specs/components/template.md](../../specs/components/template.md) to reduce ambiguity for generation.
 - Add initial runbooks in `docs/runbooks/` for common workflows; link any scripts once added.
 - Schedule AIX snapshots after each context refresh; store under `docs/logs/`.

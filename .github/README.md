@@ -2,8 +2,8 @@
 
 Entrypoints for workspace agents live here for Copilot Chat discovery.
 
-- Agents: Housekeeper, Navigator, Librarian, Analyst
-- Location: `.github/agents/*.md` (primary instructions)
+- Agent: Concierge (only)
+- Location: `.github/agents/Concierge.md`
 - Deep context: `/context`, `/specs`, `/docs`, `/.copilot/context`
 - Logs: `docs/logs/`
 
