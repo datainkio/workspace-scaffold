@@ -15,6 +15,8 @@ Copilot Chat discovers Concierge via [copilot-agents.json](../copilot-agents.jso
 - Mechanic — build/CI failures. Prompt module: [.copilot/prompts/mechanic.prompt.md](../.copilot/prompts/mechanic.prompt.md)
 - Editor — narrative/doc writing. Prompt module: [.copilot/prompts/editor.prompt.md](../.copilot/prompts/editor.prompt.md)
 - Choreographer — animations/GSAP guidance. Prompt module: [.copilot/prompts/choreographer.prompt.md](../.copilot/prompts/choreographer.prompt.md)
+- Migrator — scaffold migration/upgrades; audits differences, applies safe updates, writes changelogs. Prompt module: [.copilot/prompts/migrator.updater.prompt.md](../.copilot/prompts/migrator.updater.prompt.md); Guide: [docs/migration.md](../docs/migration.md)
+
 
 ## When to Use Which
 - Start with Concierge; it will route.
@@ -26,6 +28,8 @@ Copilot Chat discovers Concierge via [copilot-agents.json](../copilot-agents.jso
 - Mechanic: unblock failing builds/CI/runtime with minimal changes.
 - Editor: draft/revise narrative docs/portfolio text.
 - Choreographer: propose animation patterns/GSAP snippets.
+- Migrator: audit or upgrade an existing project to a newer workspace scaffold version; generate migration plans and changelogs; never touches application code unless explicitly requested.
+
 
 ## Copy/Paste Prompts (project-specific)
 - Concierge: "Classify and hand off: fix failing 11ty build referencing missing layout; include next steps." 
@@ -37,7 +41,9 @@ Copilot Chat discovers Concierge via [copilot-agents.json](../copilot-agents.jso
 - Architect: "Recommend folder/route structure for a new marketing page with Sanity-driven sections; give options/criteria." 
 - Mechanic: "Diagnose the 11ty build error about missing layout; propose minimal fix with file/line references." 
 - Editor: "Tighten the README intro to emphasize hygiene and agent workflow." 
-- Choreographer: "Suggest a GSAP scroll animation pattern for the hero and feature grid; keep it light." 
+- Choreographer: "Suggest a GSAP scroll animation pattern for the hero and feature grid; keep it light."
+- Migrator: "Audit this project against the latest workspace scaffold and summarize safe vs review-required updates."
+- Migrator: "Apply safe scaffold updates only (VS Code settings + agent prompts) and write a changelog."
 
 ## Key Cadence
 - After every context refresh: run drift sweep, regenerate curated context (if used), then log an AIX snapshot (FRA/CR/HF/TTUO/CUS) under [docs/logs](logs/README.md#L1-L21).
@@ -48,6 +54,7 @@ Copilot Chat discovers Concierge via [copilot-agents.json](../copilot-agents.jso
 - Curated map: [.copilot/context/workspace-map.md](../.copilot/context/workspace-map.md)
 - AIX spec: [specs/performance/aix.md](../specs/performance/aix.md)
 - Refresh runbook: [docs/runbooks/refresh-ai-context.md](../docs/runbooks/refresh-ai-context.md)
+- Workspace migration guide: [docs/migration.md](../docs/migration.md)
 
 ## Useful Links
 - Context truth: [context/README.md](../context/README.md)

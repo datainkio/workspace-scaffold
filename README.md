@@ -5,13 +5,21 @@ A lightweight scaffold for creating **VS Code workspaces** with:
 - better Copilot/agent ergonomics (routing, context)
 - documentation patterns you can reuse
 
-## How to use this
+## Getting Started
 
-This repo is meant to be the **workspace “control plane”**.
+This repository is a **reusable VS Code workspace scaffold**.
 
-- Keep this repo as a single-root workspace.
-- Add your actual projects as separate folders (e.g. `frontend/`, `backend/`) via **File → Add Folder to Workspace…**
-- Use this scaffold for notes, docs, runbooks, and agent configuration.
+It is intended to be used as a **template** when starting a new project — not cloned and detached.
+
+Important: Do not regenerate agent instructions (i.e. the button you get in the initial dialog for Copilot Chat). This workspace uses a custom Concierge + module routing system calibrated for AIX.
+
+**To start a new project:**
+1. Create a new repository using this repo as a **template**
+2. Clone your new project locally
+3. Follow the step-by-step guide in `docs/getting-started.md`
+
+> **Important:** Do not clone this repository directly to start a project.
+> Use the Migrator agent to apply scaffold updates to existing projects.
 
 ## What this repo does (and doesn’t)
 
@@ -26,7 +34,7 @@ This repo is meant to be the **workspace “control plane”**.
 
 ## Docs
 
-- Onboarding: `docs/onboarding/README.md`
+- Getting started: `docs/getting-started.md`
 - Docs hub: `docs/README.md`
 
 ## Tooling
@@ -46,6 +54,3 @@ The workspace includes an `.obsidian/` folder so the repo can be opened as an Ob
 - If you don’t use Obsidian, delete `.obsidian/` locally.
 - If you do use Obsidian, keep notes wherever you like (committed Markdown, Obsidian Sync, iCloud, etc.).
 - This repo defaults to **not tracking** `.obsidian/` in Git (to avoid editor state creep).
-
-
-
