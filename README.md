@@ -1,62 +1,51 @@
 # 🏗️ Workspace Scaffold
-This folder serves provides a scaffold for creating new VS Code workspaces. The goals are to improve the developer experience by maintaining:
-* good workspace hygiene,
-* optimal agent performance,
-* meaningful documentation
 
-## Implementation
-My preference is use this as the foundation for a single-root workspace. Folders like /frontend and /backend *can* be included, but good repo hygiene calls for maintaining them separately and just referencing them in the workspace via *add folder*.
+A lightweight scaffold for creating **VS Code workspaces** with:
+- solid repo hygiene (ignores, structure)
+- better Copilot/agent ergonomics (routing, context)
+- documentation patterns you can reuse
 
-## Boundaries
-Agents here maintain hygiene and AIX perf only—defer coding to project-specific agents.
+## How to use this
+
+This repo is meant to be the **workspace “control plane”**.
+
+- Keep this repo as a single-root workspace.
+- Add your actual projects as separate folders (e.g. `frontend/`, `backend/`) via **File → Add Folder to Workspace…**
+- Use this scaffold for notes, docs, runbooks, and agent configuration.
+
+## What this repo does (and doesn’t)
+
+- ✅ Maintains hygiene + AIX performance for the workspace
+- ✅ Provides templates and doc structure for consistent project documentation
+- ❌ Does not implement your product code (push that into project repos)
 
 ## Workspace actions
-- [New Project](command:workbench.action.tasks.runTask?%22New%20Project%22)
+
+- [New Project](command:workbench.action.tasks.runTask?%22New%20Project%22) (POC task)
 - [Agent Index](docs/agents.md)
-- Clean House
-- Reload Window (for new agents)
+
+## Docs
+
+- Onboarding: `docs/onboarding/README.md`
+- Docs hub: `docs/README.md`
 
 ## Tooling
-The workspace is designed with a tool-agnostic directory structure. 
 
-### Integrations
-#### Mermaid
-Mermaid is a tidy little tool designed to build charts, graphs, and diagrams from markdown files. Good for ideating, good for documenting, and good for communicating. Especially nice when you tell Copilot: "Review the XYZ package. Create a Mermaid diagram illustrating the initialization sequence..."
-#### 📓Obsidian
-Obsidian is another handly little tool for working with markdown. The workspace root comes configured as an Obsidian vault. Not a fan of Obsidian? No worries. Just ignore or delete the .obsidian folder.
+This scaffold is intentionally **tool-agnostic**. Use what your project needs.
 
-Keep your notes in sync with Git or an Obsidian account or, if you're feeling daring, iCloud or GDrive.
+### Mermaid
 
-The scaffold integrates with Obsidian not through an extension but by including default a default vault directory. 
+Mermaid is great for lightweight diagrams in Markdown. Example prompt:
 
-The Obsidian instance comes pre-configured with an ignore list to optimize the DX when working within the Obsidian app by reducing the amount of noise coming from folders (e.g. Node, 11ty, Sanity, ComfyUI, etc.)
+> “Review the XYZ package. Create a Mermaid diagram illustrating the initialization sequence.”
 
-These community plugins are installed and enabled by default:
-- [Dataview](https://github.com/Obsidian-Dataview/dataview)
-- [Templater](https://github.com/SilentVoid13/Templater)
-- [Tasks](https://github.com/obsidian-tasks-group/obsidian-tasks)
-- [Kanban](https://github.com/mgmeyers/obsidian-kanban)
+### Obsidian
 
-### Extensions
-#### Core
-#### Development
-Sanity.io
-SVG
-Nunjucks
-Github Copilot Chat
+The workspace includes an `.obsidian/` folder so the repo can be opened as an Obsidian vault.
 
-#### Publishing
-Deploy to Github Pages
-Markdown PDF
+- If you don’t use Obsidian, delete `.obsidian/` locally.
+- If you do use Obsidian, keep notes wherever you like (committed Markdown, Obsidian Sync, iCloud, etc.).
+- This repo defaults to **not tracking** `.obsidian/` in Git (to avoid editor state creep).
 
-#### Developer Experience
-npm intellisense
-Tailwind CSS Intellisense
-Prettier
-Material Icon Theme
-Figma for VS Code
-Mermaid Preview
-Markdown Preview Enhanced
-Git Graph
 
 

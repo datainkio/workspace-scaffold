@@ -7,8 +7,8 @@ This index is the primary routing surface for Concierge. Each module lists a one
 ---
 
 ## concierge.prompt.md (Router Contract)
-**Purpose:** Concierge routing contract and response format.
-**Top triggers:** route, select module, concierge behavior, response schema, AIX constraints
+**Purpose:** Defines routing policy + mandatory response schema used by Concierge.
+**Top triggers:** route, select module, routing rubric, response schema, AIX constraints
 **Primary Output type:** Contract / Output Schema
 
 ---

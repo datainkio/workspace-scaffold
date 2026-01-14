@@ -1,9 +1,20 @@
-# Documentation & Narrative Notes
+# Documentation
 
-This folder contains longer-form documentation, explanations, and narrative material
-intended primarily for human readers.
+This folder is the **human-facing docs hub** for the workspace.
 
-Content here may include background, rationale, exploration, or historical notes.
-It should not be assumed to be current or authoritative unless explicitly stated.
+## Start here
 
-For decisions, goals, or execution guidance, see `/context/`, `/specs/`, or `.agent/`.
+- New to the repo: `docs/onboarding/README.md`
+
+## Key areas
+
+- Agents and roles: `docs/agents.md` (see also `.agent/` and `.copilot/`)
+- Decisions (ADRs): `docs/decisions/`
+- Runbooks (operational how-tos): `docs/runbooks/`
+- Notes (exploration / not authoritative): `docs/notes/`
+- Logs (historical records): `docs/logs/`
+
+## Authority note
+
+Some documents in `docs/` are narrative or historical.
+For canonical constraints/goals and durable specs, prefer `context/` and `specs/`.

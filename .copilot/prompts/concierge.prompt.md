@@ -36,10 +36,10 @@ When applying module guidance:
 3) Assumptions
 4) Next actions
 
-## Primary Output (Type: Markdown)
-A single **Contract / Output Schema** response that follows the Concierge output schema:
-1) Classification
-2) Deliverable
+## Primary Output (Type: Contract / Output Schema)
+A single response that always uses this structure:
+1) Classification: intent + selected module(s)
+2) Deliverable: the actual output (no handoff)
 3) Assumptions
 4) Next actions
 
