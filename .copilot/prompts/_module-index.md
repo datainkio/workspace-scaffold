@@ -69,6 +69,12 @@ This index is the primary routing surface for Concierge. Each module lists a one
 
 ---
 
+## migrator.updater.prompt.md
+**Purpose:** Safely migrate an existing project to newer versions of the reusable VS Code workspace scaffold without disrupting project-specific work.
+**Top triggers:** update workspace scaffold, migrate project, sync with scaffold, upgrade workspace, apply latest DX/AIX conventions
+**Primary Output type:** Workspace Migration Plan
+**Non-goal:** Does not refactor application code or alter build/deploy behavior unless explicitly requested.
+
 ## navigator.prompt.md
 **Purpose:** Help locate the right file/folder/entrypoint and define where changes should live.
 **Top triggers:** where is, where should this go, file location, entry point, codebase navigation
