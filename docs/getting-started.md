@@ -91,6 +91,22 @@ The Migrator will:
 
 ---
 
+## After Using This Template
+
+- [ ] Rename the repository (and update the description)
+- [ ] Confirm the default branch name and protection rules (if any)
+- [ ] Update `README.md` to reflect the new project
+- [ ] Update `/context/project.md` (or equivalent) with the new project’s goals, constraints, and stakeholders
+- [ ] Search the repo for placeholders like `TEMPLATE`, `RENAME_ME`, `YOUR_ORG`, `YOUR_PROJECT`
+- [ ] Review `.env.example` (never commit real secrets)
+- [ ] Update package/app identifiers (`package.json` name, app title, bundle identifiers, etc.) as applicable
+- [ ] Remove or replace example content (sample assets, demo pages, placeholder data)
+- [ ] Open Copilot Chat and run the **Template Steward** agent once to verify setup
+
+Want to make your own template from this? Take advantage of docs/audit_report_template.md to ensure you hit all the right points.
+
+---
+
 ## Rules to remember
 
 - ❌ Do not clone the scaffold repo to start a project
