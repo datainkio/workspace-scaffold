@@ -40,6 +40,8 @@ Nothing more.
 
 ## Calibration Method
 
+Tip: If you want a repeatable, scoreable run (FRA/CR/HF/TTUO/CUS), use `docs/maintenance/aix-probe-bank.md`.
+
 Run this process over **2–3 short sessions** (15–30 minutes each).
 
 For each prompt:
@@ -59,7 +61,7 @@ Each prompt below is intentionally **ambiguous enough** to test routing, but **c
 **Prompt:**
 > “My repo has a bunch of build artifacts and editor files creeping into commits. Help me clean this up.”
 
-**Expected module:** `housekeeper`  1
+**Expected module:** `housekeeper`  2
 **Common misroute:** `librarian`    0
 
 Correction if needed:
@@ -71,7 +73,7 @@ Correction if needed:
 **Prompt:**
 > “I want to reorganize this workspace so agents, prompts, and docs are easier to reason about. What’s the best approach?”
 
-**Expected module:** `architect`  1
+**Expected module:** `architect`  2
 **Common misroute:** `planner`    0
 
 Correction if needed:
@@ -83,7 +85,7 @@ Correction if needed:
 **Prompt:**
 > “I need to migrate these old agent manifests into prompt modules. What should the steps be?”
 
-**Expected module:** `planner`  1
+**Expected module:** `planner`  2
 **Common misroute:** `implementer` 0
 
 Correction if needed:
@@ -95,7 +97,7 @@ Correction if needed:
 **Prompt:**
 > “The build is failing with a missing dependency error. Can you fix it?”
 
-**Expected module:** `mechanic`  1
+**Expected module:** `mechanic`  2
 **Common misroute:** `implementer` 0
 
 Correction if needed:
@@ -107,7 +109,7 @@ Correction if needed:
 **Prompt:**
 > “Add a `--dry-run` flag to this CLI and update the help text.”
 
-**Expected module:** `implementer`  1
+**Expected module:** `implementer`  2
 **This confirms:** Copilot still routes to mutation when appropriate. 
 
 ---
@@ -116,7 +118,7 @@ Correction if needed:
 **Prompt:**
 > “This README is confusing and repetitive. Can you rewrite it to be clearer?”
 
-**Expected module:** `editor`  1
+**Expected module:** `editor`  2
 **Common misroute:** `librarian` 0
 
 Correction if needed:
@@ -128,7 +130,7 @@ Correction if needed:
 **Prompt:**
 > “I don’t know where to put onboarding docs so new contributors can find them easily.”
 
-**Expected module:** `librarian`  1
+**Expected module:** `librarian`  2
 **Common misroute:** `navigator`  0
 
 Correction if needed:
@@ -140,7 +142,7 @@ Correction if needed:
 **Prompt:**
 > “Where should auth-related config live in this repo?”
 
-**Expected module:** `navigator` 1
+**Expected module:** `navigator` 2
 
 ---
 
@@ -148,7 +150,7 @@ Correction if needed:
 **Prompt:**
 > “How do we know whether this modularization actually improved AIX?”
 
-**Expected module:** `analyst`  1
+**Expected module:** `analyst`  2
 **Common misroute:** `planner`  0
 
 Correction if needed:
@@ -160,7 +162,7 @@ Correction if needed:
 **Prompt:**
 > “Which module should handle fixing a failing test, and why?”
 
-**Expected behavior:**  1
+**Expected behavior:**  2
 - Concierge answers directly
 - Names `mechanic`
 - Does **not** suggest switching agents

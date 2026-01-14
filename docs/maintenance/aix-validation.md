@@ -1,6 +1,6 @@
 # Validating Concierge AIX
 - [ ] Open Copilot Chat and confirm only Concierge appears
-- [ ] Run 10 representative tasks and score:
+- [ ] Run the probe bank in `docs/maintenance/aix-probe-bank.md` (or a consistent 10-prompt subset) and score:
   - first-pass success rate
   - number of follow-up questions
   - consistency of formatting
