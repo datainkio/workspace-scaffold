@@ -169,6 +169,12 @@ custom_nodes/**/.cache/
 *.log
 
 ###############################################################################
+# AI audits (generated / timestamped reports)
+###############################################################################
+docs/ai/audits/*
+!docs/ai/audits/README.md
+
+###############################################################################
 # Optional: Keep curated assets tracked
 # (Remove patterns above selectively if you want to commit final images/videos)
 ###############################################################################
