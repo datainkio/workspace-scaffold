@@ -64,7 +64,7 @@ Note: This repo is a workspace scaffold (hygiene + docs + agent workflows). It d
 
 ## Agent Roles
 - Concierge: router; registered in Copilot; emits handoff requests to specialists.
-- Specialists: Housekeeper (hygiene/excludes/AIX logging), Navigator (context packs), Librarian (docs), Analyst (AIX probes), Architect (structure/decisions), Mechanic (build/CI failures), Editor (narrative), Choreographer (animations/GSAP guidance).
+- Specialists: Housekeeper (hygiene/excludes/AIX logging), Navigator (context packs), Librarian (docs), Analyst (AIX probes), Architect (structure/decisions), Mechanic (build/CI failures), Editor (narrative).
 
 ## Agent Notes / Next AIX actions
 - Create `context/current-goals.md` to anchor priorities.

@@ -14,8 +14,9 @@ Copilot Chat discovers Concierge via [copilot-agents.json](../copilot-agents.jso
 - Architect — structure/decisions. Prompt module: [.copilot/prompts/architect.prompt.md](../.copilot/prompts/architect.prompt.md)
 - Mechanic — build/CI failures. Prompt module: [.copilot/prompts/mechanic.prompt.md](../.copilot/prompts/mechanic.prompt.md)
 - Editor — narrative/doc writing. Prompt module: [.copilot/prompts/editor.prompt.md](../.copilot/prompts/editor.prompt.md)
-- Choreographer — animations/GSAP guidance. Prompt module: [.copilot/prompts/choreographer.prompt.md](../.copilot/prompts/choreographer.prompt.md)
 - Migrator — scaffold migration/upgrades; audits differences, applies safe updates, writes changelogs. Prompt module: [.copilot/prompts/migrator.updater.prompt.md](../.copilot/prompts/migrator.updater.prompt.md); Guide: [docs/migration.md](../docs/migration.md)
+
+Note: some projects may include their own domain-specific agents (e.g., choreography or framework-specific helpers). Prefer the project context packs under `context/projects/`.
 
 
 ## When to Use Which
@@ -27,7 +28,6 @@ Copilot Chat discovers Concierge via [copilot-agents.json](../copilot-agents.jso
 - Architect: decide structure/routes/CMS schema; outline options.
 - Mechanic: unblock failing builds/CI/runtime with minimal changes.
 - Editor: draft/revise narrative docs/portfolio text.
-- Choreographer: propose animation patterns/GSAP snippets.
 - Migrator: audit or upgrade an existing project to a newer workspace scaffold version; generate migration plans and changelogs; never touches application code unless explicitly requested.
 
 
@@ -41,7 +41,6 @@ Copilot Chat discovers Concierge via [copilot-agents.json](../copilot-agents.jso
 - Architect: "Recommend folder/route structure for a new marketing page with Sanity-driven sections; give options/criteria." 
 - Mechanic: "Diagnose the 11ty build error about missing layout; propose minimal fix with file/line references." 
 - Editor: "Tighten the README intro to emphasize hygiene and agent workflow." 
-- Choreographer: "Suggest a GSAP scroll animation pattern for the hero and feature grid; keep it light."
 - Migrator: "Audit this project against the latest workspace scaffold and summarize safe vs review-required updates."
 - Migrator: "Apply safe scaffold updates only (VS Code settings + agent prompts) and write a changelog."
 

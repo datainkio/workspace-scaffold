@@ -27,13 +27,6 @@ This index is the primary routing surface for Concierge. Each module lists a one
 
 ---
 
-## choreographer.prompt.md
-**Purpose:** Interaction/animation choreography guidance (GSAP/ScrollTrigger patterns, motion systems, UX choreography).
-**Top triggers:** GSAP, ScrollTrigger, animation system, choreography, transitions, motion guidelines
-**Primary Output type:** Choreography Spec
-
----
-
 ## editor.prompt.md
 **Purpose:** Rewrite/edit text with consistent voice, structure, and clarity (docs, copy, narrative).
 **Top triggers:** rewrite, tighten, tone, clarity, restructure, editing

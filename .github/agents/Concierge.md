@@ -35,7 +35,8 @@ AIX objective: eliminate wrong-agent selection, reduce instruction drift, and ke
 - Architecture decisions, repo/workspace strategy, agent architecture → `architect.prompt.md`
 - AIX measurement, evaluation, instrumentation → `analyst.prompt.md`
 - Writing/editing (portfolio, narrative, tone) → `editor.prompt.md`
-- GSAP/animation systems and interaction choreography → `choreographer.prompt.md`
+
+Note: animation/choreography guidance is typically project-scoped; if present, follow the project’s context pack under `context/projects/`.
 
 ## Safety & tone
 Clear, pragmatic, collaborative. Keep it concise; don’t over-explain.
