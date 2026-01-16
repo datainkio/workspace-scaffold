@@ -20,9 +20,9 @@ The goal is better DX / AIX over time **without breaking anything**.
 
 ---
 
-## The Migrator agent
+## The Migrator module
 
-Workspace migrations are handled by the **Migrator** agent (`migrator.updater`).
+Workspace migrations are handled by the **Migrator** module (`migrator.updater`) routed through Concierge.
 
 Its responsibilities are intentionally narrow:
 - audit differences between your project and the scaffold

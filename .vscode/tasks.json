@@ -37,7 +37,7 @@
 		{
 			"label": "Check Current Goals",
 			"type": "shell",
-			"command": "node ${workspaceFolder}/scripts/current-goals-check.mjs",
+			"command": "node \"${workspaceFolder}/scripts/current-goals-check.mjs\"",
 			"presentation": {
 				"reveal": "always",
 				"panel": "dedicated",
@@ -49,7 +49,7 @@
 		{
 			"label": "Check Current Goals (CI Mode)",
 			"type": "shell",
-			"command": "node ${workspaceFolder}/scripts/current-goals-check.mjs --fail-on-update --maxAgeDays 14",
+			"command": "node \"${workspaceFolder}/scripts/current-goals-check.mjs\" --fail-on-update --maxAgeDays 14",
 			"presentation": {
 				"reveal": "always",
 				"panel": "dedicated",
@@ -61,7 +61,7 @@
 		{
 			"label": "Open Current Goals",
 			"type": "shell",
-			"command": "code ${workspaceFolder}/context/current-goals.md",
+			"command": "code \"${workspaceFolder}/context/current-goals.md\"",
 			"presentation": {
 				"reveal": "never",
 				"panel": "dedicated",
@@ -73,7 +73,7 @@
 		{
 			"label": "Open Agent Index",
 			"type": "shell",
-			"command": "code ${workspaceFolder}/docs/agents.md",
+			"command": "code \"${workspaceFolder}/docs/agents.md\"",
 			"presentation": {
 				"reveal": "never",
 				"panel": "dedicated",

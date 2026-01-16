@@ -12,7 +12,7 @@ Note: This repo is a workspace scaffold (hygiene + docs + agent workflows). It d
 	- [context/constraints.md](../../context/constraints.md) — non-negotiables
 	- [context/decisions.md](../../context/decisions.md) — decisions / ADR-style notes
 	- [context/example-context.md](../../context/example-context.md) — example pattern
-- Expected soon (missing): `context/current-goals.md` (single page of “what matters right now”).
+	- [context/current-goals.md](../../context/current-goals.md) — single page of “what matters right now”.
 
 ## Curated Agent Context (orientation layer)
 - [.copilot/context/README.md](README.md) — what this curated layer is.
@@ -38,7 +38,8 @@ Note: This repo is a workspace scaffold (hygiene + docs + agent workflows). It d
 	- Agent index: [docs/agents.md](../../docs/agents.md)
 	- Runbooks: [docs/runbooks/](../../docs/runbooks/)
 	- Logs (AIX/hygiene + project audits): [docs/logs/](../../docs/logs/)
-		- Project audit outputs live under `docs/logs/projects/<project-root>/` (example: [docs/logs/projects/frontend/](../../docs/logs/projects/frontend/README.md))
+		- Project log index: [docs/logs/projects/](../../docs/logs/projects/)
+		- Project audit outputs live under `docs/logs/projects/<project-slug>/` (example: [docs/logs/projects/frontend/](../../docs/logs/projects/frontend/README.md))
 	- Decisions (narrative ADRs): [docs/decisions/](../../docs/decisions/)
 
 ## Scripts
@@ -68,7 +69,7 @@ Note: This repo is a workspace scaffold (hygiene + docs + agent workflows). It d
 - Specialists: Housekeeper (hygiene/excludes/AIX logging), Navigator (context packs), Librarian (docs), Analyst (AIX probes), Architect (structure/decisions), Mechanic (build/CI failures), Editor (narrative).
 
 ## Agent Notes / Next AIX actions
-- Create `context/current-goals.md` to anchor priorities.
+- Keep [context/current-goals.md](../../context/current-goals.md) current to anchor priorities.
 - Fill spec templates starting with [specs/architecture/template.md](../../specs/architecture/template.md) and [specs/components/template.md](../../specs/components/template.md) to reduce ambiguity for generation.
 - Add initial runbooks in `docs/runbooks/` for common workflows; link any scripts once added.
 - Schedule AIX snapshots after each context refresh; store under `docs/logs/`.

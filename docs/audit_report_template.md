@@ -41,4 +41,4 @@
 
 ## Next step
 
-After applying changes, create a fresh repo via **Use this template**, clone it, open in VS Code, and run **Template Steward** once to validate.
+After applying changes, create a fresh repo via **Use this template**, clone it, open in VS Code, and ask **Concierge** once to validate (e.g., “generate a template personalization checklist”).

@@ -8,6 +8,10 @@ Project-specific audits and evaluations live under:
 
 - `docs/logs/projects/<project-slug>/`
 
+Index:
+
+- [docs/logs/projects/](projects/README.md)
+
 Example:
 
 - [docs/logs/projects/frontend/](projects/frontend/README.md)

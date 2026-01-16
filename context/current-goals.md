@@ -5,19 +5,17 @@ This file is the single-source-of-truth for what matters *right now*.
 Last updated: 2026-01-16
 
 ## Now
-- Make the scaffold the canonical home for operational artifacts (audits, evaluations, maintenance logs) produced by Concierge.
-- Reduce AIX confusion in multi-root workspaces by keeping navigation pointers stable and unambiguous (workspace map → logs convention → per-project log folder).
-- Prefer “non-invasive by default” behavior: do not modify mounted projects unless explicitly authorized; when changes are authorized, keep them minimal and reversible.
-- Keep logs actionable and comparable: write short, evidence-backed reports that point to exact artifacts and outcomes.
+- Reduce TTUO for humans by keeping a concise, copy/paste prompt set in the root README (with a linked full catalog in docs/).
+
+- Deconflict routing surfaces: keep Concierge as the only entrypoint; describe other capabilities as routed modules.
 
 ## Next
 - Establish a lightweight AIX evidence loop:
 	- Run a small probe set after context refreshes.
-	- Record a dated snapshot in `docs/logs/` (scaffold) with outcomes and links.
+	- Record a dated snapshot in `docs/logs/` with outcomes + links.
 - Standardize project log naming and structure across mounted repos:
-	- `docs/logs/projects/<project-root>/YYYY-MM-DD-<topic>.md`
-	- Include: scope, constraints used, actions taken, and follow-ups.
-- Deconflict agent routing surfaces (avoid multiple competing “entrypoints” that cause wrong-agent selection).
+	- `docs/logs/projects/<project-slug>/YYYY-MM-DD-<topic>.md`
+	- Keep a short per-project README describing what’s inside.
 
 ## Not Now
 - Auto-generated global inventories (a full ToC of every log file) in the workspace map.

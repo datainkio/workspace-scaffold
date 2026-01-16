@@ -1,4 +1,4 @@
-# Migrator Agent — Workspace Scaffold Updater (Copilot / Concierge Module)
+# Migrator Module — Workspace Scaffold Updater (Copilot / Concierge)
 
 > Purpose: Safely bring an existing project **up to date** with the latest version of your reusable VS Code workspace scaffold **without breaking project-specific work**.
 
@@ -46,7 +46,7 @@ If any input is missing, proceed with best effort:
 
 ## Outputs (Always)
 ### 1) Migration Report (Markdown)
-Create: `docs/changes/workspace-migration-2026-01-14.md` containing:
+Create: `docs/changes/workspace-migration-YYYY-MM-DD.md` containing:
 - scaffold source + version (if known)
 - detected project version + creation metadata (from manifest if present)
 - summary counts:

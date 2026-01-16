@@ -47,6 +47,8 @@ Pick one cadence and stick to it:
 
 Use the checker to decide if an update is recommended based on drift signals (age, changes to context/specs/decisions/logs, and git status).
 
+- Preferred (VS Code): run the task **Check Current Goals**
+
 - Run: `node scripts/current-goals-check.mjs`
 - Stricter: `node scripts/current-goals-check.mjs --maxAgeDays 3`
 - CI mode: `node scripts/current-goals-check.mjs --fail-on-update --maxAgeDays 14`

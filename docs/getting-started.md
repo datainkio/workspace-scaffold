@@ -77,10 +77,10 @@ There is **no automatic syncing** with the scaffold — by design.
 
 ## Step 6: Applying updates in the future
 
-As the scaffold improves over time, you can bring updates into existing projects using the **Migrator** agent.
+As the scaffold improves over time, you can bring updates into existing projects using Concierge (Migrator module).
 
 Recommended workflow:
-1. Run Migrator in **Audit mode** to see what changed
+1. Ask Concierge to run Migrator in **Audit mode** to see what changed
 2. Review the proposed updates
 3. Apply only the safe updates you want
 
@@ -101,7 +101,7 @@ The Migrator will:
 - [ ] Review `.env.example` (never commit real secrets)
 - [ ] Update package/app identifiers (`package.json` name, app title, bundle identifiers, etc.) as applicable
 - [ ] Remove or replace example content (sample assets, demo pages, placeholder data)
-- [ ] Open Copilot Chat and run the **Template Steward** agent once to verify setup
+- [ ] Open Copilot Chat and ask **Concierge** for a “template personalization checklist” once to verify setup
 
 Want to make your own template from this? Take advantage of docs/audit_report_template.md to ensure you hit all the right points.
 

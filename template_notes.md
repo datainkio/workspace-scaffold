@@ -26,7 +26,7 @@ This repository is intended to be used as a **GitHub template repository** (not 
 
 1. Create a new repo via **Use this template**
 2. Clone it locally and open in VS Code
-3. Run the **Template Steward** agent (from the Copilot Agents dropdown)
+3. Open Copilot Chat and ask **Concierge** for a “template personalization checklist”
 4. Apply the checklist it generates
 5. Commit “Initial scaffold personalization” as your first commit
 
