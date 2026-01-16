@@ -37,11 +37,12 @@ Note: This repo is a workspace scaffold (hygiene + docs + agent workflows). It d
 - Key doc entrypoints:
 	- Agent index: [docs/agents.md](../../docs/agents.md)
 	- Runbooks: [docs/runbooks/](../../docs/runbooks/)
-	- Logs (AIX/hygiene snapshots): [docs/logs/](../../docs/logs/)
+	- Logs (AIX/hygiene + project audits): [docs/logs/](../../docs/logs/)
+		- Project audit outputs live under `docs/logs/projects/<project-root>/` (example: [docs/logs/projects/frontend/](../../docs/logs/projects/frontend/README.md))
 	- Decisions (narrative ADRs): [docs/decisions/](../../docs/decisions/)
 
 ## Scripts
-- [scripts/README.md](../../scripts/README.md) — scripting guidance (no scripts yet).
+- [scripts/README.md](../../scripts/README.md) — lightweight workspace utilities (keep dependency-free when possible).
 
 ## Assets & Data
 - [assets/](../../assets/) and [data/](../../data/) exist and are currently empty.
@@ -60,7 +61,7 @@ Note: This repo is a workspace scaffold (hygiene + docs + agent workflows). It d
 - [workspace_scaffold.code-workspace](../../workspace_scaffold.code-workspace) — VS Code workspace definition.
 - VS Code settings/tasks live in [.vscode/](../../.vscode/) (includes the “New Project” task).
 - Root README: [README.md](../../README.md) — scaffold intent + quick actions.
-- Obsidian vault config: [.obsidian/](../../.obsidian/)
+- Obsidian vault config: `.obsidian/` (optional; intentionally ignored to avoid editor state creep).
 
 ## Agent Roles
 - Concierge: router; registered in Copilot; emits handoff requests to specialists.

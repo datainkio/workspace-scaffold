@@ -1,8 +1,23 @@
-# Hygiene Reports
+# Logs
 
-Use this folder to store workspace hygiene reports produced by agents (housekeeper/analyst). Reports should be concise, link to files touched, and include evidence for AIX metrics. Log an AIX snapshot here after each context refresh per `specs/performance/aix.md`.
+Use this folder to store Concierge/agent operational artifacts for the scaffold itself and for mounted projects.
 
-## Naming
+## Project Logs
+
+Project-specific audits and evaluations live under:
+
+- `docs/logs/projects/<project-slug>/`
+
+Example:
+
+- [docs/logs/projects/frontend/](projects/frontend/README.md)
+
+## Hygiene Reports
+
+Use this folder to store scaffold hygiene reports produced by agents (housekeeper/analyst). Reports should be concise, link to files touched, and include evidence for AIX metrics. Log an AIX snapshot here after each context refresh per `specs/performance/aix.md`.
+
+### Naming
+
 - `YYYY-MM-DD-hygiene.md`
 
 ## Required Sections
