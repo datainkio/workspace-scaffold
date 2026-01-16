@@ -35,6 +35,42 @@
 			}
 		},
 		{
+			"label": "Check Current Goals",
+			"type": "shell",
+			"command": "node ${workspaceFolder}/scripts/current-goals-check.mjs",
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated",
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Check Current Goals (CI Mode)",
+			"type": "shell",
+			"command": "node ${workspaceFolder}/scripts/current-goals-check.mjs --fail-on-update --maxAgeDays 14",
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated",
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Open Current Goals",
+			"type": "shell",
+			"command": "code ${workspaceFolder}/context/current-goals.md",
+			"presentation": {
+				"reveal": "never",
+				"panel": "dedicated",
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"problemMatcher": []
+		},
+		{
 			"label": "Open Agent Index",
 			"type": "shell",
 			"command": "code ${workspaceFolder}/docs/agents.md",
