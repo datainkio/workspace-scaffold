@@ -45,7 +45,7 @@ Can you paste the exact error output (or the failing command + stack trace) and 
 ## Inputs to read first
 - The user request
 - Any explicitly referenced files provided by the user
-- If present and relevant: `workspace_scaffold.code-workspace`, `.vscode/tasks.json`, `.vscode/settings.json`
+- If present and relevant: `vitaixmen.code-workspace`, `.vscode/tasks.json`, `.vscode/settings.json`
 
 ## Example calls
 - “CI is failing on Node 20 with this error—what’s the minimal fix?”

@@ -36,7 +36,7 @@ This index is the primary routing surface for Concierge. Each module lists a one
 
 ## housekeeper.prompt.md
 **Purpose:** Workspace hygiene (folders, naming, ignores, conventions, DX/AIX cleanliness).
-**Top triggers:** .gitignore, ignore files/folders, workspace scaffold, naming conventions, cleanup
+**Top triggers:** .gitignore, ignore files/folders, vitaixmen, naming conventions, cleanup
 **Primary Output type:** Workspace Hygiene Plan
 
 ---
@@ -63,8 +63,8 @@ This index is the primary routing surface for Concierge. Each module lists a one
 ---
 
 ## migrator.updater.prompt.md
-**Purpose:** Safely migrate an existing project to newer versions of the reusable VS Code workspace scaffold without disrupting project-specific work.
-**Top triggers:** update workspace scaffold, migrate project, sync with scaffold, upgrade workspace, apply latest DX/AIX conventions
+**Purpose:** Safely migrate an existing project to newer versions of vitaixmen without disrupting project-specific work.
+**Top triggers:** update vitaixmen, migrate project, sync with vitaixmen, upgrade workspace, apply latest DX/AIX conventions
 **Primary Output type:** Workspace Migration Plan
 **Non-goal:** Does not refactor application code or alter build/deploy behavior unless explicitly requested.
 

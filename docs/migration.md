@@ -1,6 +1,6 @@
-# Workspace Migration Guide
+# Vitaixmen Migration Guide
 
-This guide explains how to **upgrade an existing project** to newer versions of the Workspace Scaffold **safely and intentionally**.
+This guide explains how to **upgrade an existing project** to newer versions of Vitaixmen **safely and intentionally**.
 
 If you are starting a brand‑new project, see `docs/getting-started.md` instead.
 
@@ -49,7 +49,7 @@ These areas are considered **scaffold‑managed** and are safe to update automat
 - Workspace hygiene files
   - `.gitignore`, `.editorconfig`, `.gitattributes`
 - Scaffold metadata
-  - `.workspace-scaffold.json`
+  - `.vitaixmen.json`
 
 All updates are additive or merged conservatively.
 
@@ -90,7 +90,7 @@ Unless you explicitly ask, the Migrator will not touch:
 
 Ask the Migrator to audit your project:
 
-> “Compare this project to the latest workspace scaffold and show me what changed.”
+> “Compare this project to the latest vitaixmen and show me what changed.”
 
 You’ll receive:
 - a migration report
@@ -119,7 +119,7 @@ When ready, ask:
 The Migrator will:
 - apply only low‑risk updates
 - write a changelog to `docs/changes/`
-- update `.workspace-scaffold.json`
+- update `.vitaixmen.json`
 
 ---
 
@@ -128,7 +128,7 @@ The Migrator will:
 Every migration produces documentation, typically:
 
 - `docs/changes/workspace-migration-YYYY-MM-DD.md`
-- an updated `.workspace-scaffold.json` history entry
+- an updated `.vitaixmen.json` history entry
 
 These make migrations:
 - reviewable

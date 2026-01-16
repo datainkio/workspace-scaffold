@@ -28,7 +28,7 @@ Note: some projects may include their own domain-specific agents (e.g., choreogr
 - Architect: decide structure/routes/CMS schema; outline options.
 - Mechanic: unblock failing builds/CI/runtime with minimal changes.
 - Editor: draft/revise narrative docs/portfolio text.
-- Migrator: audit or upgrade an existing project to a newer workspace scaffold version; generate migration plans and changelogs; never touches application code unless explicitly requested.
+- Migrator: audit or upgrade an existing project to a newer vitaixmen version; generate migration plans and changelogs; never touches application code unless explicitly requested.
 
 
 ## Copy/Paste Prompts (project-specific)
@@ -41,7 +41,7 @@ Note: some projects may include their own domain-specific agents (e.g., choreogr
 - Architect: "Recommend folder/route structure for a new marketing page with Sanity-driven sections; give options/criteria." 
 - Mechanic: "Diagnose the 11ty build error about missing layout; propose minimal fix with file/line references." 
 - Editor: "Tighten the README intro to emphasize hygiene and agent workflow." 
-- Migrator: "Audit this project against the latest workspace scaffold and summarize safe vs review-required updates."
+- Migrator: "Audit this project against the latest vitaixmen and summarize safe vs review-required updates."
 - Migrator: "Apply safe scaffold updates only (VS Code settings + agent prompts) and write a changelog."
 
 ## Key Cadence

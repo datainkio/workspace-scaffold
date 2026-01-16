@@ -1,11 +1,11 @@
-# ADR 0001: Workspace Scaffold for AI Performance
+# ADR 0001: Vitaixmen for AI Performance
 
 - **Status:** accepted
 - **Date:** 2026-01-13
 - **Owners:** DX Team
 
 ## Context
-AI agents (AIX) perform best when context, specs, and ops docs are predictable and low-noise. We need a scaffold that makes it easy for developers to find truthy sources while keeping indexing light.
+AI agents (AIX) perform best when context, specs, and ops docs are predictable and low-noise. We need vitaixmen to make it easy for developers to find truthy sources while keeping indexing light.
 
 ## Decision
 - Use a single-root workspace with canonical folders: `/context` (truth), `/specs` (contracts), `/docs/decisions` (ADRs), `/docs/runbooks` (ops), `/docs/notes` (narrative).

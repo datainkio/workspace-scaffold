@@ -4,14 +4,14 @@ Start here if you’re new to this repo.
 
 ## What this repo is
 
-This repo is a **VS Code workspace scaffold**: it holds workspace configuration, documentation patterns, and Copilot/agent setup.
+This repo is **Vitaixmen**: a VS Code workspace starter with repo hygiene, documentation patterns, and Copilot/agent setup.
 
 - Product code typically lives in **separate repos/folders** that you add to the workspace.
 - Canonical “truth” about constraints and decisions lives in `context/` and `docs/decisions/`.
 
 ## Quick start (10 minutes)
 
-1. Open the workspace (`workspace_scaffold.code-workspace`).
+1. Open the workspace (`vitaixmen.code-workspace`).
 2. Skim the repo map in the root README.
 3. If you’re working on a project repo, add it via **File → Add Folder to Workspace…**
 4. For operational procedures, use `docs/runbooks/`.

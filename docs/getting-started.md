@@ -1,6 +1,6 @@
 # Getting Started
 
-This guide walks you through **starting a new project** using the Workspace Scaffold.
+This guide walks you through **starting a new project** using Vitaixmen.
 
 If you are upgrading an existing project, see `docs/migration.md` instead.
 
@@ -10,7 +10,7 @@ If you are upgrading an existing project, see `docs/migration.md` instead.
 
 This scaffold is designed to be used as a **template**, not cloned directly.
 
-- Open the Workspace Scaffold repository on GitHub
+- Open the Vitaixmen repository on GitHub
 - Click **“Use this template”**
 - Create a new repository for your project
 
@@ -50,7 +50,7 @@ If VS Code prompts you to install recommended extensions, accept them.
 Each project includes a small metadata file:
 
 ```
-.workspace-scaffold.json
+.vitaixmen.json
 ```
 
 This file records:
@@ -111,7 +111,7 @@ Want to make your own template from this? Take advantage of docs/audit_report_te
 
 - ❌ Do not clone the scaffold repo to start a project
 - ❌ Do not try to keep projects automatically synced
-- ❌ Do not delete `.workspace-scaffold.json`
+- ❌ Do not delete `.vitaixmen.json`
 - ✅ Use the template to start new projects
 - ✅ Use Migrator to upgrade intentionally
 

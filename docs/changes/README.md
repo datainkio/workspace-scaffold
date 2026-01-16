@@ -4,7 +4,7 @@ This folder stores **changelogs produced by scaffold-managed updates**, especial
 
 ## What belongs here
 
-- Workspace scaffold migration reports:
+- Vitaixmen migration reports:
   - `workspace-migration-YYYY-MM-DD.md`
 
 ## What does not belong here

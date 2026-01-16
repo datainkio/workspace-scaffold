@@ -60,7 +60,7 @@ Notes:
 ### Routing & scope control — 3
 
 - Prompt modules are well-scoped.
-- Risk: if multiple selectable agents are present (workspace scaffold Concierge + frontend agents), routing becomes user-dependent and less predictable.
+- Risk: if multiple selectable agents are present (vitaixmen Concierge + frontend agents), routing becomes user-dependent and less predictable.
 
 ### Output quality — 3
 
@@ -82,7 +82,7 @@ Overall effectiveness (qualitative): 3.4/5
 
 1. Deconflict agent selection in multi-root setups
 
-- Consider moving `.github/agents/*.agent.md` into `docs/ai/legacy-agents/` (or otherwise ensuring they are not active/selectable) when the workspace scaffold Concierge is present.
+- Consider moving `.github/agents/*.agent.md` into `docs/ai/legacy-agents/` (or otherwise ensuring they are not active/selectable) when the vitaixmen Concierge is present.
 
 2. Add lightweight run evidence
 

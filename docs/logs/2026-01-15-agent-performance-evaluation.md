@@ -1,6 +1,6 @@
 # Agent Performance Evaluation (AIX) – 2026-01-15
 
-Scope: Workspace Scaffold (Concierge + module routing + repo hygiene conventions).
+Scope: Vitaixmen (Concierge + module routing + repo hygiene conventions).
 
 Evidence sources:
 - In-repo specs/prompts/docs
@@ -17,7 +17,7 @@ Probe definitions: [docs/maintenance/aix-probe-bank.md](../maintenance/aix-probe
 
 | ID | Expected module | FRA | Clarifications | Hallucinations | TTUO | CUS | Notes |
 |---:|---|:---:|---:|---:|---:|---:|---|
-| P1* | housekeeper | Y | 0 | 0 | 1 | 2 | *Mapped to user prompt “Check the hygiene of workspace scaffold”. Implemented concrete fixes + log.* |
+| P1* | housekeeper | Y | 0 | 0 | 1 | 2 | *Mapped to user prompt “Check the hygiene of vitaixmen”. Implemented concrete fixes + log.* |
 | P2† | librarian | Y | 0 | 0 | 1 | 2 | †Synthetic prompt: onboarding docs location. Correctly points to `docs/onboarding/README.md` + links from `docs/README.md` + root README. |
 | P4† | architect | Y | 0 | 0 | 1 | 2 | †Synthetic prompt: minimal-churn reorg. Recommendation: keep Concierge + module model, improve indexes/maps, avoid moving files. |
 | P9† | mechanic | Y | 0 | 0 | 1 | 2 | †Synthetic prompt: failing test module selection. Correct answer: `mechanic`. |

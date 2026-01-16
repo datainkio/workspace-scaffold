@@ -1,6 +1,6 @@
 # TEMPLATE_NOTES
 
-This repository is intended to be used as a **GitHub template repository** (not a fork) for spinning up new projects with a consistent workspace scaffold and AI-friendly structure.
+This repository is intended to be used as a **GitHub template repository** (not a fork) for spinning up new projects with a consistent vitaixmen baseline and AI-friendly structure.
 
 ## What should change in a new project
 

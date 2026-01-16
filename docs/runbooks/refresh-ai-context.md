@@ -25,4 +25,4 @@
 - If folder structure was altered incorrectly, restore from git and re-apply the scaffold layout.
 
 ## Comms Template
-- "Refreshed AI context/indexes for workspace scaffold. Synced `/context`, `/specs`, ADRs, runbooks; validated excludes. Please pull main to pick up updates."
+- "Refreshed AI context/indexes for vitaixmen. Synced `/context`, `/specs`, ADRs, runbooks; validated excludes. Please pull main to pick up updates."

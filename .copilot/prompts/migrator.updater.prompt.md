@@ -1,6 +1,6 @@
-# Migrator Module — Workspace Scaffold Updater (Copilot / Concierge)
+# Migrator Module — Vitaixmen Updater (Copilot / Concierge)
 
-> Purpose: Safely bring an existing project **up to date** with the latest version of your reusable VS Code workspace scaffold **without breaking project-specific work**.
+> Purpose: Safely bring an existing project **up to date** with the latest version of vitaixmen **without breaking project-specific work**.
 
 ---
 
@@ -30,7 +30,7 @@ Do **not** use this agent when the user asks to:
 ---
 
 ## Primary Inputs to Read First
-1. `/.workspace-scaffold.json` (or `/.workspace/version.json`) in the target project (if present)
+1. `/.vitaixmen.json` (or `/.workspace/version.json`) in the target project (if present)
 2. The target project tree (folders + key files)
 3. The **scaffold source** (one of):
    - a local path to the scaffold repo, or
@@ -103,7 +103,7 @@ Rules:
 - Hygiene files
   - `.editorconfig`, `.gitignore`, `.gitattributes` (merge/append only; preserve local additions)
 - “marker” files
-  - `/.workspace-scaffold.json` updates (bump version, record applied migration)
+  - `/.vitaixmen.json` updates (bump version, record applied migration)
 
 ### ⚠️ Review required (never auto-apply by default)
 - Renames or moves of files/folders
@@ -170,7 +170,7 @@ Use this structure verbatim:
 
 ## Example Calls
 ### Example 1 — Audit
-“Compare this repo to the latest workspace scaffold and tell me what to update.”
+“Compare this repo to the latest vitaixmen and tell me what to update.”
 
 ### Example 2 — Apply safe updates
 “Apply the safe scaffold updates (VS Code settings + agent prompts) and write a changelog.”

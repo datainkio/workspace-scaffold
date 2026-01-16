@@ -19,4 +19,4 @@ Authoritative decision records (ADRs) live here. They capture why we chose an ap
 - When uncertainty exists, prefer the latest accepted ADR; if missing, flag in `/docs/notes/` or `/context/`.
 
 ## Examples
-- [ADR 0001: Workspace Scaffold for AI Performance](0001-workspace-scaffold-for-ai.md)
+- [ADR 0001: Vitaixmen for AI Performance](0001-vitaixmen-for-ai.md)

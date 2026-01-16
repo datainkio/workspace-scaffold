@@ -2,7 +2,7 @@
 
 Use this file to run a consistent, repeatable set of prompts to measure Agent Experience (AIX) over time.
 
-This probe bank is designed for this workspace scaffold:
+This probe bank is designed for vitaixmen:
 - Concierge is the only user-facing agent.
 - Specialists are prompt modules under `.copilot/prompts/`.
 - Evidence should be captured in `docs/logs/`.

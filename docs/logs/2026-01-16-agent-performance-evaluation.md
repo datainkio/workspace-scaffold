@@ -1,6 +1,6 @@
 # Agent Performance Evaluation (AIX) — 2026-01-16
 
-Scope: WORKSPACE SCAFFOLD only (Concierge + module routing + scaffold docs/runbooks/scripts). **Explicitly excludes** the mounted project at `frontend/`.
+Scope: VITAIXMEN only (Concierge + module routing + scaffold docs/runbooks/scripts). **Explicitly excludes** the mounted project at `frontend/`.
 
 Evidence sources:
 - AIX snapshot: [2026-01-16-aix-snapshot.md](2026-01-16-aix-snapshot.md)

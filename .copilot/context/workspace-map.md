@@ -1,8 +1,8 @@
 # Workspace Map
-This file describes where everything lives in this scaffold workspace and what each folder contains.
+This file describes where everything lives in the Vitaixmen workspace and what each folder contains.
 Focus: keep AI agents oriented and fast.
 
-Note: This repo is a workspace scaffold (hygiene + docs + agent workflows). It does not include a concrete `/frontend` or `/backend` project by default.
+Note: Vitaixmen is a workspace starter (hygiene + docs + agent workflows). It does not include a concrete `/frontend` or `/backend` project by default.
 
 ## Canonical Context (source of truth)
 - [context/README.md](../../context/README.md) — what “context” means and why it’s authoritative.
@@ -59,7 +59,7 @@ Note: This repo is a workspace scaffold (hygiene + docs + agent workflows). It d
 - Entrypoints for registered agents live under [.github/agents/](../../.github/agents/).
 
 ## Workspace Config
-- [workspace_scaffold.code-workspace](../../workspace_scaffold.code-workspace) — VS Code workspace definition.
+- [vitaixmen.code-workspace](../../vitaixmen.code-workspace) — VS Code workspace definition.
 - VS Code settings/tasks live in [.vscode/](../../.vscode/) (includes the “New Project” task).
 - Root README: [README.md](../../README.md) — scaffold intent + quick actions.
 - Obsidian vault config: `.obsidian/` (optional; intentionally ignored to avoid editor state creep).

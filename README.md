@@ -1,4 +1,4 @@
-# 🏗️ Workspace Scaffold
+# Vitaixmen
 
 A lightweight scaffold for creating **VS Code workspaces** with:
 - solid repo hygiene (ignores, structure)
@@ -7,7 +7,7 @@ A lightweight scaffold for creating **VS Code workspaces** with:
 
 ## Getting Started
 
-This repository is a **reusable VS Code workspace scaffold**.
+This repository is **Vitaixmen**, a reusable VS Code workspace starter.
 
 It is intended to be used as a **template** when starting a new project — not cloned and detached.
 

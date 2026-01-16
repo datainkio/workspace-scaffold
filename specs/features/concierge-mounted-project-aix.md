@@ -24,7 +24,7 @@
 - Not a general refactor assistant for mounted project product code.
 - No edits to generated outputs or build artifacts.
 - No adding new dependencies as part of auto-fix.
-- No changing the workspace scaffold itself as part of optimizing a mounted project.
+- No changing vitaixmen itself as part of optimizing a mounted project.
 
 ## User Stories & Journeys
 

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Workspace Scaffold Manifest",
+  "title": "Vitaixmen Manifest",
   "type": "object",
   "required": [
     "scaffold",
@@ -18,7 +18,7 @@
         "name": {
           "type": "string",
           "examples": [
-            "workspace-scaffold"
+            "vitaixmen"
           ]
         },
         "source": {
@@ -102,7 +102,7 @@
             ".editorconfig",
             ".gitignore",
             ".gitattributes",
-            ".workspace-scaffold.json"
+            ".vitaixmen.json"
           ]
         },
         "excluded_paths": {
