@@ -81,6 +81,25 @@
 				"clear": true
 			},
 			"problemMatcher": []
+		},
+		{
+			"label": "Link Check Frontend Markdown",
+			"type": "shell",
+			"command": "node \"${workspaceFolder}/scripts/markdown-link-check.mjs\" --root \"${input:frontendRoot}\" --text --max 50",
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated",
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"inputs": [
+				{
+					"id": "frontendRoot",
+					"type": "promptString",
+					"description": "Enter the absolute path to the frontend repo root (e.g., /Users/<you>/Projects/Portfolio/frontend)"
+				}
+			],
+			"problemMatcher": []
 		}
 	]
 }
